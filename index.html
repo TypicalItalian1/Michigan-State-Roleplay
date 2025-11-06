@@ -9,12 +9,14 @@
   <style>
     :root { --bg:#0e0e12; --card:#14141b; --text:#e9e9ef; --muted:#a7a7b4; --accent:#ffd95a; --accent-2:#fff2b3; }
     *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#0e0e12, #111118);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    body{margin:0;background:radial-gradient(1200px 600px at 80% -20%, #1b1b26 0%, transparent 60%),linear-gradient(180deg,#0e0e12, #111118);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
     .wrap{max-width:1100px;margin:0 auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
     nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
     nav a:hover{color:var(--accent)}
-    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:48px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:38px;width:auto;border-radius:8px;border:1px solid #2a2a35;background:#0f0f14}
+    .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;padding:48px 0}
     .card{background:var(--card);border:1px solid #1f1f2a;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
     h1{font-size:44px;line-height:1.1;margin:0 0 12px}
     p{color:var(--muted);line-height:1.6}
@@ -28,19 +30,15 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .pill{display:inline-block;background:#1b1b25;border:1px solid #242435;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:14px}
     footer{margin:44px 0 8px;color:#7f7f8f;font-size:14px;text-align:center}
-    img.heroimg{width:100%;border-radius:16px;border:1px solid #1f1f2a}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-      h1{font-size:36px}
-    }
+    @media (max-width:900px){ h1{font-size:36px} .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div style="display:flex;align-items:center;gap:10px;">
-        <div style="width:34px;height:34px;border-radius:10px;background:var(--accent)"></div>
+      <div class="brand">
+        <!-- Replace the src with your uploaded logo path (e.g., /assets/logo.png) -->
+        <img src="./assets/logo.png" alt="Server Logo" onerror="this.style.display='none'" />
         <strong>Michigan State Roleplay</strong>
       </div>
       <nav>
@@ -56,8 +54,10 @@
         <h1>Serious ERLC Roleplay, Daily Sessions.</h1>
         <p>Join a well-run, friendly community with strict yet fair RP standards. VC interviews for staff, clear rules, and regular events.</p>
         <div class="btns">
-          <a class="btn primary" href="https://discord.gg/yourinvite" target="_blank" rel="noopener">Join our Discord</a>
-          <a class="btn ghost" href="#apply">Apply for Staff</a>
+          <!-- JOIN OUR COMMUNITY button -->
+          <a class="btn primary" href="https://discord.gg/msrpx" target="_blank" rel="noopener">Join our community</a>
+          <!-- Link to staff application (Google Form, etc.) -->
+          <a class="btn ghost" href="https://melon.ly/form/7380979693022875648" target="_blank" rel="noopener">Apply for Staff</a>
         </div>
         <div style="margin-top:14px">
           <span class="pill">⚡ Daily SSU</span>
@@ -65,7 +65,7 @@
           <span class="pill">🚓 LEO • FD • Civ</span>
         </div>
       </div>
-      <img class="heroimg" alt="ERLC showcase" src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop" />
+     
     </div>
 
     <section id="about" class="card">
@@ -90,7 +90,7 @@
     <section id="apply" class="card">
       <h2>Apply</h2>
       <p>We’re recruiting Moderators and Admins (VC interview required). Fill the application below:</p>
-      <p><a class="btn" href="https://forms.gle/your-form" target="_blank" rel="noopener">Open Staff Application</a></p>
+      <p><a class="btn" href="https://melon.ly/form/7380979693022875648" target="_blank" rel="noopener">Open Staff Application</a></p>
     </section>
 
     <footer>© 2025 Michigan State Roleplay • Not affiliated with Roblox or ERLC.</footer>
