@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michigan State Roleplay (ERLC)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0e0e12; --card:#14141b; --text:#e9e9ef; --muted:#a7a7b4; --accent:#ffd95a; --accent-2:#fff2b3; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0e0e12, #111118);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:48px 0}
+    .card{background:var(--card);border:1px solid #1f1f2a;border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+    p{color:var(--muted);line-height:1.6}
+    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{padding:12px 18px;border-radius:12px;border:1px solid #2a2a35;text-decoration:none;font-weight:700;display:inline-block}
+    .btn.primary{background:var(--accent);color:#14120a;border:none}
+    .btn.primary:hover{filter:brightness(0.95)}
+    .btn.ghost{color:var(--text);background:transparent}
+    section{margin:42px 0}
+    h2{font-size:28px;margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .pill{display:inline-block;background:#1b1b25;border:1px solid #242435;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:14px}
+    footer{margin:44px 0 8px;color:#7f7f8f;font-size:14px;text-align:center}
+    img.heroimg{width:100%;border-radius:16px;border:1px solid #1f1f2a}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:34px;height:34px;border-radius:10px;background:var(--accent)"></div>
+        <strong>Michigan State Roleplay</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#rules">Rules</a>
+        <a href="#apply">Apply</a>
+        <a href="#sessions">Sessions</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Serious ERLC Roleplay, Daily Sessions.</h1>
+        <p>Join a well-run, friendly community with strict yet fair RP standards. VC interviews for staff, clear rules, and regular events.</p>
+        <div class="btns">
+          <a class="btn primary" href="https://discord.gg/yourinvite" target="_blank" rel="noopener">Join our Discord</a>
+          <a class="btn ghost" href="#apply">Apply for Staff</a>
+        </div>
+        <div style="margin-top:14px">
+          <span class="pill">⚡ Daily SSU</span>
+          <span class="pill">🛡️ Active Staff</span>
+          <span class="pill">🚓 LEO • FD • Civ</span>
+        </div>
+      </div>
+      <img class="heroimg" alt="ERLC showcase" src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop" />
+    </div>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>We host structured patrols, realistic scenes, and enforce NITRP/VDM/RDM policies so everyone gets quality RP. New and experienced players welcome.</p>
+    </section>
+
+    <section id="rules" class="card">
+      <h2>Server Rules (Quick Hits)</h2>
+      <ul>
+        <li>Don’t interfere with active roleplays. If staff calls you, stop immediately.</li>
+        <li>No RDM/VDM/NITRP. Follow traffic laws unless scene requires otherwise.</li>
+        <li>Be respectful. Follow staff directions during scenes and interviews.</li>
+      </ul>
+    </section>
+
+    <section id="sessions" class="card">
+      <h2>Sessions</h2>
+      <p>We aim for 5+ hour sessions daily. Check Discord for SSU/Shutdown times and event announcements.</p>
+    </section>
+
+    <section id="apply" class="card">
+      <h2>Apply</h2>
+      <p>We’re recruiting Moderators and Admins (VC interview required). Fill the application below:</p>
+      <p><a class="btn" href="https://forms.gle/your-form" target="_blank" rel="noopener">Open Staff Application</a></p>
+    </section>
+
+    <footer>© 2025 Michigan State Roleplay • Not affiliated with Roblox or ERLC.</footer>
+  </div>
+</body>
+</html>
