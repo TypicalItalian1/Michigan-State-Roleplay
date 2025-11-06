@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet the Staff — Michigan State Roleplay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0e0e12; --card:#14141b; --text:#e9e9ef; --muted:#a7a7b4; --accent:#ffd95a; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0e0e12,#111118);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:34px;width:auto;border-radius:8px;border:1px solid #2a2a35;background:#0f0f14}
+
+    h1{font-size:38px;line-height:1.1;margin:18px 0}
+    p{color:var(--muted);line-height:1.6}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+    .card{background:var(--card);border:1px solid #1f1f2a;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .person{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:50%;background:#1b1b25;border:1px solid #2a2a35;overflow:hidden;flex:0 0 auto}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .name{font-weight:800;font-size:18px}
+    .role{display:inline-block;margin-top:6px;background:#232330;border:1px solid #2a2a35;color:#dcdce8;padding:5px 10px;border-radius:999px;font-size:12px}
+    .meta{margin-top:10px;color:var(--muted);font-size:14px}
+    .links{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:8px 12px;border-radius:10px;border:1px solid #2a2a35;text-decoration:none;font-weight:700;color:var(--text)}
+    .btn.primary{background:var(--accent);color:#14120a;border:none}
+
+    .section{margin:24px 0}
+
+    .footer{margin:44px 0 8px;color:#7f7f8f;font-size:14px;text-align:center}
+
+    @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:32px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="./assets/logo.png" alt="Server Logo" onerror="this.style.display='none'" />
+        <strong>Michigan State Roleplay</strong>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#team">Staff</a>
+        <a href="#apply" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'});return false;">Apply</a>
+      </nav>
+    </header>
+
+    <h1>Meet the Staff Team</h1>
+    <p>Our staff keeps sessions running smoothly and fairly. Learn who to contact for appeals, reports, or questions.</p>
+
+    <!--
+      HOW TO EDIT THIS PAGE
+      1) Replace avatar URLs with your own files in /assets (e.g., ./assets/staff-zach.png)
+      2) Change name, role, timezone, and Discord handles below
+      3) Duplicate a <div class="card"> block to add more staff
+    -->
+
+    <div class="grid" id="team">
+      <!-- Example card 1 -->
+      <div class="card">
+        <div class="person">
+          <div class="avatar"><img src="./assets/staff-owner.png" alt="Owner Avatar" onerror="this.src='https://avatars.githubusercontent.com/u/9919?s=80&v=4'" /></div>
+          <div>
+            <div class="name">Zachary W.</div>
+            <div class="role">Owner • Director</div>
+            <div class="meta">Timezone: EST • Since 2024</div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://discord.com/users/REPLACE_ID" target="_blank" rel="noopener">Discord</a>
+          <a class="btn" href="mailto:you@example.com">Email</a>
+        </div>
+      </div>
+
+      <!-- Example card 2 -->
+      <div class="card">
+        <div class="person">
+          <div class="avatar"><img src="./assets/staff-admin1.png" alt="Admin Avatar" onerror="this.src='https://i.pravatar.cc/64'" /></div>
+          <div>
+            <div class="name">Mia R.</div>
+            <div class="role">Head Administrator</div>
+            <div class="meta">Timezone: CST • Appeals & Training</div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://discord.com/users/REPLACE_ID" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
+
+      <!-- Example card 3 -->
+      <div class="card">
+        <div class="person">
+          <div class="avatar"><img src="./assets/staff-mod1.png" alt="Moderator Avatar" onerror="this.src='https://i.pravatar.cc/65'" /></div>
+          <div>
+            <div class="name">Logen P.</div>
+            <div class="role">Senior Moderator</div>
+            <div class="meta">Timezone: PST • Reports & Support</div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://discord.com/users/REPLACE_ID" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed by duplicating one of the blocks above -->
+    </div>
+
+    <div class="section card" id="apply">
+      <h2>Apply for Staff</h2>
+      <p>Want to help run sessions and keep RP quality high? We’re recruiting Moderators and Admins (VC interview required).</p>
+      <p><a class="btn primary" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">Open Staff Application</a></p>
+    </div>
+
+    <div class="footer">© 2025 Michigan State Roleplay • Not affiliated with Roblox or ERLC.</div>
+  </div>
+</body>
+</html>
